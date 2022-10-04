@@ -7,7 +7,8 @@
 Exploring bikesharing data in major cities
 
 ### Description
-Describe what your project is about and what it does
+This project accesses the bikesharing data stored in the csv files, filters it according to the user's preference
+and displays selected statistics about the data.
 
 ### Files used
 Include the files used
