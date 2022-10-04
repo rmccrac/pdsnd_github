@@ -11,7 +11,10 @@ This project accesses the bikesharing data stored in the csv files, filters it a
 and displays selected statistics about the data.
 
 ### Files used
-Include the files used
+Bikeshare.py
+Chicago.csv
+New_York_City.csv
+Washington.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
