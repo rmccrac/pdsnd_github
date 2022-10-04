@@ -45,7 +45,7 @@ def get_filters(): #completed
     elif month_or_day == 'day':
         while True:
             month = 'all'
-            day = input('Which day do you want information for? (ALL, MON, TUE, WED, THU, FRI, SAT, SUN): ').lower()
+            day = input('Which day do you want information for(enter 3 letters)? (ALL, MON, TUE, WED, THU, FRI, SAT, SUN): ').lower()
             day = day[:3]
             if day in ['all', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']:
                 break
@@ -57,7 +57,6 @@ def get_filters(): #completed
         
     print('-'*40)
     return city, month, day
-
 
 def load_data(city, month, day): #completed
     """
@@ -90,7 +89,6 @@ def load_data(city, month, day): #completed
     
     return df
 
-
 def time_stats(df): #completed
     """Displays statistics on the most frequent days and months of travel."""
 
@@ -114,7 +112,6 @@ def time_stats(df): #completed
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
 def station_stats(df): #completed
     """Displays statistics on the most popular stations and trip."""
 
@@ -136,7 +133,6 @@ def station_stats(df): #completed
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
 def trip_duration_stats(df): #completed
     """Displays statistics about the total trip duration and average trip duration."""
 
@@ -157,7 +153,6 @@ def trip_duration_stats(df): #completed
     
     print('\nThis took {} seconds.'.format(time.time() - start_time))
     print('-'*40)
-
 
 def user_stats(df): #completed
     """Displays statistics on bikeshare users."""
@@ -190,7 +185,6 @@ def user_stats(df): #completed
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
 def main(): #completed
     while True:
         city, month, day = get_filters()
@@ -211,7 +205,6 @@ def main(): #completed
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
-
 
 if __name__ == "__main__": #completed
 	main()
