@@ -45,7 +45,7 @@ def get_filters(): #completed
     elif month_or_day == 'day':
         while True:
             month = 'all'
-            day = input('Which day do you want information for? (ALL, MON, TUE, WED, THU, FRI, SAT, SUN): ').lower()
+            day = input('Which day do you want information for(enter 3 letters)? (ALL, MON, TUE, WED, THU, FRI, SAT, SUN): ').lower()
             day = day[:3]
             if day in ['all', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']:
                 break
