@@ -138,7 +138,7 @@ def station_stats(df): #completed
 
 
 def trip_duration_stats(df): #completed
-    """Displays statistics on the total and average trip duration."""
+    """Displays statistics about the total trip duration and average trip duration."""
 
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
